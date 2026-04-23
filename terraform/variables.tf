@@ -4,15 +4,14 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "hf_token" {
-  description = "Hugging Face Token for gated models (like Gemma)"
+variable "instance_type" {
+  description = "EC2 instance type for ML inference node (CPU-based)"
   type        = string
-  sensitive   = true
-  default     = ""
+  default     = "t3.small"
 }
 
-variable "model_id" {
-  description = "Hugging Face Model ID to serve"
+variable "docker_image" {
+  description = "Docker image for the ML app (DockerHub or ECR URI)"
   type        = string
-  default     = "google/gemma-4-E2B-it"
+  default     = "house-price-api:latest"
 }

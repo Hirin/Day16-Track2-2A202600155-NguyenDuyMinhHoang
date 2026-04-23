@@ -3,14 +3,22 @@ output "bastion_public_ip" {
 }
 
 output "alb_dns_name" {
-  value = aws_lb.ai_alb.dns_name
-  description = "The DNS name of the ALB to access the inference endpoint"
+  value       = aws_lb.ml_alb.dns_name
+  description = "The DNS name of the ALB to access the ML prediction endpoint"
 }
 
-output "endpoint_url" {
-  value = "http://${aws_lb.ai_alb.dns_name}/v1/completions"
+output "predict_url" {
+  value = "http://${aws_lb.ml_alb.dns_name}/predict"
 }
 
-output "gpu_private_ip" {
-  value = aws_instance.gpu_node.private_ip
+output "health_url" {
+  value = "http://${aws_lb.ml_alb.dns_name}/health"
+}
+
+output "docs_url" {
+  value = "http://${aws_lb.ml_alb.dns_name}/docs"
+}
+
+output "ml_node_private_ip" {
+  value = aws_instance.ml_node.private_ip
 }
