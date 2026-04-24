@@ -59,6 +59,8 @@ AWS chỉ cho phép **6 loại instance** Free Tier eligible, trong đó **`m7i-
 
 ![AWS Billing Dashboard](./screenshots/billing.png)
 
+![AWS Billing - By Region](./screenshots/billing_region.png)
+
 ## 6. So sánh CPU vs GPU (Báo cáo ngắn)
 
 1. **Instance type**: Dùng `m7i-flex.large` (CPU, 8GB RAM) thay vì `g4dn.xlarge` (GPU T4, 16GB) do Free Tier chặn GPU quota.
