@@ -1,0 +1,28 @@
+{
+  "benchmark_info": {
+    "timestamp": "2026-04-24T00:04:44.188892Z",
+    "dataset": "Credit Card Fraud Detection (mlg-ulb/creditcardfraud)",
+    "dataset_rows": 284807,
+    "model": "LightGBM (Gradient Boosting)",
+    "instance_type": "CPU (m7i-flex.large \u2014 2 vCPU, 8 GB RAM)",
+    "lab": "Lab 16 - Cloud AI Environment Setup (CPU Fallback)"
+  },
+  "performance": {
+    "data_load_time_seconds": 1.042,
+    "training_time_seconds": 8.579,
+    "best_iteration": 157,
+    "auc_roc": 0.983642,
+    "accuracy": 0.999473,
+    "f1_score": 0.836957,
+    "precision": 0.895349,
+    "recall": 0.785714
+  },
+  "inference": {
+    "single_row_avg_latency_ms": 0.214,
+    "single_row_p50_latency_ms": 0.209,
+    "single_row_p95_latency_ms": 0.232,
+    "single_row_p99_latency_ms": 0.261,
+    "batch_1000_rows_time_ms": 6.17,
+    "batch_throughput_rows_per_sec": 162074.0
+  }
+}

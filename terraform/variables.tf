@@ -5,14 +5,14 @@ variable "aws_region" {
 }
 
 variable "hf_token" {
-  description = "Hugging Face Token for gated models (like Gemma)"
+  description = "Hugging Face Token (not needed for CPU/LightGBM, set to dummy)"
   type        = string
   sensitive   = true
-  default     = ""
+  default     = "dummy"
 }
 
 variable "model_id" {
-  description = "Hugging Face Model ID to serve"
+  description = "Model identifier (LightGBM for CPU mode)"
   type        = string
-  default     = "google/gemma-4-E2B-it"
+  default     = "lightgbm-creditcard-fraud"
 }
