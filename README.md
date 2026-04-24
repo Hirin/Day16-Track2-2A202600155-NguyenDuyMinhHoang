@@ -3,6 +3,7 @@
 ## 1. Tổng quan
 
 Triển khai hạ tầng AWS bằng Terraform (IaC) cho bài toán **Credit Card Fraud Detection** sử dụng **LightGBM** trên CPU instance, theo phương án dự phòng Phần 7 của README_aws.md.
+Có chút trục trặc nên em push code cũ qua nhánh khác để update lại cho phù hợp yêu cầu của bài thành ra nộp trễ ạ, a có thể review qua nhánh "ML" nếu cần ạ 😢
 
 ## 2. Lý do dùng CPU thay GPU
 
